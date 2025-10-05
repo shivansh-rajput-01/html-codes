@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Course Enrollment Form</h1>
+    <form action="/action">
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" name ="nm" id="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="password">Password : </label>
+            <input type="password" name="pass" id="password" placeholder="Enter your password" required>
+        </div>
+        <div>
+            <label for="email">Email : </label>
+            <input type="email" name="em" id="email" placeholder="Enter your Email">
+        </div>
+        <div>
+            <input type="range" min="1" max="10" name="interest" id="interest" value="12">
+            <label for="interest">Intersest</label>
+        </div>
+        <div>
+            Choose your course : 
+            <input type="radio" name="course" id="course1" vlaue="wd" required>
+            <label for="course1">Web Development</label>
+            <input type="radio" name="course" id="course2" vlaue="ai" required>
+            <label for="course2">AI</label>
+            <input type="radio" name="course" id="course3" vlaue="ds" required>
+            <label for="course3">Data Science</label>
+        </div>
+        <div>
+            Technology known : 
+            <input type="checkbox" name="tech" id="tech1" value="java">
+            <label for="tech1">Java</label>
+            <input type="checkbox" name="tech" id="tech2" value="python">
+            <label for="tech2">Python</label>
+            <input type="checkbox" name="tech" id="tech3" value="HCJ">
+            <label for="tech3">HTML,CSS,JS</label>
+            <input type="checkbox" name="tech" id="tech4" value="mern">
+            <label for="tech4">MERN Stack</label>
+        </div>
+        <div>
+            <label for="date">Enter start date preference : </label>
+            <input type="date" name="date" id="date" required>
+        </div>
+        <div>
+            <label for="state">Select your state : </label>
+            <select name="st" id="state" required>
+                <option value="" selected disabled>Choose state</option>
+                <option value="up">Uttar Pradesh</option>
+                <option value="uk">Uttra Khand</option>
+                <option value="delhi">Delhi</option>
+                <option value="haryana">Haryana</option>
+                <option value="punjab">Punjab</option>
+                <option value="mp">Madhya Pradesh</option>
+                <option value="tn">Tamil Nadu</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="assam">Assam</option>
+                <option value="sikkim">Sikkim</option>
+                <option value="ap">Arunachal Pradesh</option>
+                <option value="meghalaya">Meghalaya</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="nagaland">Nagaland</option>
+                <option value="tripura">Tripura</option>
+            </select>
+        </div>
+        <div>
+            <label for="textarea">Reason for this course : </label>
+            <textarea name="reason" id="textarea" rows="5" cols="20" placeholder="Enter message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
